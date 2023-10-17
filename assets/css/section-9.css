@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+.footer {
+    display: grid;
+    grid-template-columns: 460px 866px;
+    height: 573px;
+    width: 1440px;
+    background-image: url("../images/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    /*346px*/
+}
+.class-space-and-logo-and-scrabble{
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 350px 26px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.class-logo-text{
+    /*работа с тектом который выглядит как логотип*/
+    /*помещен в блок который размещает текст по центру */
+    width: 458px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #232323;
+    font-family: 'Cardo',serif;
+    line-height: 62px;
+    font-weight: 700;
+    font-size: 63px;
+}
+#idText-MyLogTravels{
+    width: 230px;
+}
+.footer .class-scrabble-image{
+    grid-row:3;
+    margin-top: -17px;
+    justify-self: start;
+    margin-left: -35px;
+    /*margin-right: 100px;*/
+}
+
+.class-quick-links{
+    display: grid;
+    grid-template-rows: 111px 64px 257px;
+}
+.class-copyright{
+    margin-left: 3.5px;
+}
+#idTextCopyRight{
+    margin-left: 50px;
+    letter-spacing: -0.58px;
+    color: #232323;
+    font-size: 21px;
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+}
+#quickLinks{
+    grid-row:2;
+    font-family: Lato,sans-serif;
+    letter-spacing: -0.55px;
+    word-spacing: 1px;
+    color: #232323;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+.class-links{
+    display: grid;
+    grid-template-columns: 218px 223px 228px 228px;
+    line-height: 47.5px;
+    color: #232323;
+    letter-spacing: -1px;
+}
+.footer a{
+    /*отключили украшения для ссылок, цвет ссылки совпадает с цветом текста */
+    text-decoration: none;
+    color: inherit;
+
+    transition: border-color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.footer a:hover {
+    border-color:#6d6d6d;
+    color:white;
+    background-color: #6d6d6d;
+}
+.class-links-Column-1, .class-links-Column-2,.class-links-Column-4{
+    /*изменяется расстояние между буквами для 3 из 4 колонок*/
+    letter-spacing: -0.75px;
+}
+/*ширина у блоков у каждого своя*/
+.class-links-Column-3{
+    letter-spacing: -0.65px;
+}
+.class-quick-links{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    word-spacing: 1px;
+}
+.class-links{
+    grid-row: 3;
+}
+.class-text-quick-links{
+    font-family: Lato,sans-serif;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+    color: #232323;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+/*стили тексту copyright*/
+.footer #idTextCopyRight {
+    color: #232323;
+    font-size: 21px;
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+}
+.class-links a{
+    font-size: 21px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    transition: border-bottom-color 2s, color 0.5s;
+    border: 2px solid transparent;
+}
